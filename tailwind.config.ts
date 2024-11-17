@@ -8,10 +8,27 @@ export default {
   ],
   theme: {
     extend: {
+      maxWidth: {
+        '8xl': '82.5rem',
+      },
+      divideWidth: {
+        1: '1px'
+      },
       colors: {
         background: "var(--background)",
-        foreground: "var(--foreground)",
+        green: {
+          g1: "#1DA84F"
+        },
+        gray: {
+          g1: "#5E5E5E",
+          g2: '#A2A1A1',
+          g3: '#414742',
+          w1: "#EFF0EF",
+          w2: "#F8F6F4",
+          b1: "#202020"
+        },
       },
+
     },
   },
   plugins: [],

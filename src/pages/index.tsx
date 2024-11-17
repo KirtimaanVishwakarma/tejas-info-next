@@ -1,9 +1,19 @@
-import React from 'react'
+import ContactForm from '@/components/contact-form-section';
+import Layout from '@/components/layout';
+import Map from '@/components/map';
+import React from 'react';
 
-const Index = () => {
+const Home = () => {
   return (
-    <div>Index</div>
-  )
-}
+    <section className='max-w-8xl m-auto'>
+      <ContactForm />
+      <Map />
+    </section>
+  );
+};
 
-export default Index
+Home.getLayout = function getLayout(page: React.ReactNode) {
+  return <Layout>{page}</Layout>;
+};
+
+export default Home;
