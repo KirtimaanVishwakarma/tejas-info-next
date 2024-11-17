@@ -45,7 +45,7 @@ const ContactForm = () => {
           </div>
         </div>
         <div className='flex-1'>
-          <div className='grid grid-cols-2 w-full gap-x-4 gap-y-2'>
+          <div className='grid grid-cols-2 w-full gap-x-4 gap-y-2 mb-4'>
             <FormWrapper formObject={registerForm} />
           </div>
           <Button btnName='Send'/>
