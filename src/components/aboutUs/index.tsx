@@ -39,10 +39,15 @@ const AboutUs = () => {
           </p>
           <Button btnName={`Let's Connect`} />
         </div>
-        <Image src={Images.GirlWithBoard} alt='' className='flex-1' />
+        <div className='flex-1'>
+          <Image src={Images.GirlWithBoard} alt='' className='w-full' />
+        </div>
       </section>
       <section className='flex items-center gap-4'>
-        <Image src={Images.GuyWithPc} alt='' className='flex-1' />
+        <div className='flex-1'>
+          <Image src={Images.GuyWithPc} alt='' className='w-full' />
+        </div>
+
         <div className='flex-1'>
           <header className='text-5xl font-extrabold capitalize tracking-tighter mb-4 text-gray-g3'>
             We Deal With The Aspects Of Professional{' '}
@@ -94,7 +99,9 @@ const AboutUs = () => {
             ))}
           </div>
         </div>
-        <Image src={Images.GuyWithSetting} alt='' className='flex-1' />
+        <div className='flex-1'>
+          <Image src={Images.GuyWithSetting} alt='' className='w-full' />
+        </div>
       </section>
     </div>
   );
