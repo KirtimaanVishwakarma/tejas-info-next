@@ -10,7 +10,7 @@ const Textarea = ({
   className,
 }: FormObjects) => {
   return (
-    <div className={`w-full ${span ? span : 'col-span-1'}`}>
+    <div className={`w-full ${span ? span : 'col-span-2'}`}>
       <div className={`flex flex-col gap-1`}>
         <label htmlFor={id} className='text-gray-g3 font-semibold'>
           {label || ''}

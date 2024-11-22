@@ -6,6 +6,11 @@ interface FooterOptionsInterface {
     links: Array<{ name: string, href: string }>;
 }
 
+interface FaqContentsInterface {
+    header: string;
+    details: string;
+}
+
 export interface FormObjects {
     label: string;
     id: string;
@@ -100,4 +105,23 @@ export const registerForm: Array<FormObjects> = [
             required: 'Message is required'
         }
     },
+]
+
+export const faqContents: Array<FaqContentsInterface> = [
+    {
+        header: 'Do you offer both on-site and remote IT support?',
+        details: `RisuTech Global specializes in software development and digital marketing, also we provides facility of on-site or remote IT support. However, we prioritize understanding our clients' needs and can discuss tailored solutions that may include support options. Please reach out for more information!`
+    },
+    {
+        header: 'What is RisuTech Global ?',
+        details: `RisuTech Global is a leading software development company that delivers innovative technology solutions, specializing in web development, application development, game development, and custom software. We also provide comprehensive digital marketing services, including SEO strategies to enhance online visibility. Our expert team focuses on creating user-friendly, high-performance applications and websites while prioritizing customer satisfaction and collaboration with clients.`
+    },
+    {
+        header: 'Is There Any Updates In The Future ?',
+        details: `We are committed to continuous innovation and enhancing our services. We regularly assess emerging technologies, including AI, machine learning, and blockchain, to better serve our clients. Stay tuned for announcements about new offerings and improvements!`
+    },
+    {
+        header: 'How Much For The Service?',
+        details: `The cost of our services at RisuTech Global varies based on project requirements, complexity, and technology involved. We offer tailored solutions to meet the unique needs of each client. For a detailed quote, please contact us at info@risutechglobal.com or call us at +91 8081954350. We look forward to discussing your project!`
+    }
 ]

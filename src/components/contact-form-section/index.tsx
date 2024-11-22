@@ -5,7 +5,7 @@ import Button from '../Buttons/button';
 
 const ContactForm = () => {
   return (
-    <section className='text-gray-g3 px-4'>
+    <section className='text-gray-g3 px-4 max-w-8xl m-auto'>
       <div>
         <header className='text-green-g1 text-sm font-bold uppercase'>
           contact
@@ -48,7 +48,7 @@ const ContactForm = () => {
           <div className='grid grid-cols-2 w-full gap-x-4 gap-y-2 mb-4'>
             <FormWrapper formObject={registerForm} />
           </div>
-          <Button btnName='Send'/>
+          <Button btnName='Send' />
         </div>
       </div>
     </section>
