@@ -2,22 +2,20 @@ import Image from 'next/image';
 import React from 'react';
 import Images from '@/constants/images';
 import { faqContents } from '@/constants/constant';
+import DetailsContainer from '../detailsContainer';
 
 const FAQ = () => {
   return (
-    <section className='px-4 max-w-8xl m-auto'>
-      <header className='text-green-g1 font-bold'>FAQ</header>
-      <header className='text-5xl font-extrabold capitalize tracking-tighter mb-3 text-gray-g3'>
-        Frequently Asked Questions
-      </header>
-      <header className='font-normal text-gray-g1 text-base tracking-wider w-3/5 leading-8'>
-        The integration of cohesive software solutions allows for precise
-        control over achieving your project goals and ensuring accurate
-        estimates.
-      </header>
+    <DetailsContainer
+      componentType='faq'
+      header='Frequently Asked Questions'
+      description='The integration of cohesive software solutions allows for precise
+    control over achieving your project goals and ensuring accurate
+    estimates.'
+    >
       <div className='flex gap-4 mt-4'>
         <div className='flex-1'>
-        <Image src={Images.Faq} alt='faq' className='' />
+          <Image src={Images.Faq} alt='faq' className='' />
         </div>
         <div className='flex flex-1 items-center'>
           <div className='flex flex-col gap-4'>
@@ -35,7 +33,7 @@ const FAQ = () => {
           </div>
         </div>
       </div>
-    </section>
+    </DetailsContainer>
   );
 };
 

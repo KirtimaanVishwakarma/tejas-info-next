@@ -17,7 +17,7 @@ const Home = () => {
   return (
     <section className='m-auto'>
       <HeroSection />
-      <div className='w-full relative z-20 bg-gray-w2'>
+      <div className='w-full relative z-20 bg-gray-w2 flex flex-col gap-16'>
         <Services />
         <AboutUs />
         <CountSection />
