@@ -1,5 +1,4 @@
 import { servicesData } from '@/constants/constant';
-import Icon from '@/components/customize-icon';
 import React from 'react';
 import { HiArrowLongRight } from 'react-icons/hi2';
 import DetailsContainer from '../detailsContainer';
@@ -17,19 +16,16 @@ const Services = () => {
             key={index}
             className='bg-gray-w1 rounded p-6 w-full flex flex-col gap-4'
           >
-            <Icon icon={<service.image />} className='text-green-g1 text-6xl' />
+            <service.image color="#1da84f" fontSize="3.75rem"/>
             <header className='text-black font-bold text-2xl'>
               {service.title}
             </header>
             <p className='text-gray-g1 font-medium'>{service.description}</p>
             <div className='flex items-center gap-2'>
-              <header className='capitalize text-green-g1 font-bold !text-xl'>
+              <header className='capitalize text-green-g1 font-bold !text-xl !cursor-pointer'>
                 Learn more
               </header>
-              <Icon
-                icon={<HiArrowLongRight />}
-                className='text-green-g1 !text-lg'
-              />
+              <HiArrowLongRight  color="#1da84f" fontSize="1.125rem"/>
             </div>
           </div>
         ))}

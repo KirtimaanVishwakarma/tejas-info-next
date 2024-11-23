@@ -7,7 +7,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 
 const Navbar = () => {
-  const { pathname } = useRouter();
+  const router = useRouter();
   return (
     <section className='bg-gray-w1 bg-opacity-50 py-3 absolute top-0 w-full z-20'>
       <nav className='max-w-8xl m-auto  flex justify-between px-3'>
@@ -18,14 +18,14 @@ const Navbar = () => {
               key={nav.name}
               href={nav.href}
               className={`px-4 py-3 whitespace-nowrap font-semibold ${
-                pathname === nav.href ? 'text-green-g1' : 'text-gray-g1'
+                router?.pathname === nav.href ? 'text-green-g1' : 'text-gray-g1'
               } hover:text-green-g1 transition-all cursor-pointer delay-150 text-sm`}
             >
               {nav.name}
             </Link>
           ))}
         </div>
-        <Button btnName={`Let's Connect`} className='' />
+        <Button btnName={`Let's Connect`} onClick={()=>router.push('/contact-us')} />
       </nav>
     </section>
   );

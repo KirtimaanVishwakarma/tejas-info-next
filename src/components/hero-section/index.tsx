@@ -1,17 +1,18 @@
 import { SocialMediaLinks } from '@/constants/constant';
 import React from 'react';
-import Icon from '../customize-icon';
 import Button from '../Buttons/button';
 import AnimationBackground from '../animations';
+import { useRouter } from 'next/router';
 
 const HeroSection = () => {
+  const router = useRouter();
   return (
     <section className='w-full relative bg-gray-w2 min-h-96 h-screen flex justify-center items-center flex-col'>
-      <div className='max-w-8xl m-auto flex justify-center items-center flex-col gap-4'>
+      <div className='max-w-8xl m-auto flex justify-center items-center flex-col gap-4 relative z-10'>
         <div className='flex gap-4 justify-center'>
           {SocialMediaLinks.map((link, index) => (
             <div key={index} className='bg-gray-w1 p-2 rounded'>
-              <Icon icon={<link.icon />} className='text-2xl text-gray-g1' />
+              <link.icon color="#5e5e5e" fontSize="1.5rem"/>
             </div>
           ))}
         </div>
@@ -28,11 +29,20 @@ const HeroSection = () => {
           partner with you to transform your vision into reality!
         </p>
         <div className='flex gap-4'>
-          <Button btnName='Join Now' />
-          <Button btnName='learn more' btnType={'secondary'} />
+          <Button
+            btnName='Join Now'
+            onClick={() => router.push('/contact-us')}
+          />
+          <Button
+            btnName='learn more'
+            btnType={'secondary'}
+            onClick={() => router.push('/about')}
+          />
         </div>
       </div>
-      <AnimationBackground className={'absolute h-full w-full left-0 top-0 z-0'} />
+      <AnimationBackground
+        className={'absolute h-full w-full left-0 top-0 z-0'}
+      />
     </section>
   );
 };

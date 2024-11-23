@@ -1,7 +1,6 @@
 import { ourTeamMember } from '@/constants/constant';
 import Image from 'next/image';
 import React from 'react';
-import Icon from '../customize-icon';
 import DetailsContainer from '../detailsContainer';
 
 const OurTeam = () => {
@@ -24,11 +23,7 @@ const OurTeam = () => {
               </header>
               <div className='w-fit m-auto flex gap-2 items-center mb-2'>
                 {member.socialMedia.map((socialMedia, ind) => (
-                  <Icon
-                    icon={<socialMedia.icon />}
-                    key={ind}
-                    className='text-2xl text-gray-g1'
-                  />
+                  <socialMedia.icon color='#5e5e5e' fontSize='1.5rem' key={ind}/>
                 ))}
               </div>
             </div>
