@@ -14,11 +14,11 @@ const Button: FC<ButtonInterface> = ({
   btnType = 'primary',
 }: ButtonInterface) => {
   const btnClass = useMemo(() => {
-    return btnType === 'primary' ? ` bg-green-g1 text-white` : 'border border-green-g1 text-gray-g1';
-  }, [btnType]);
+    return btnType === 'primary' ? ` bg-green-g1 text-white` : 'border border-green-g1 !text-gray-b1';
+  }, []);
   return (
     <button
-      className={`${btnClass} ${className} px-6 py-2.5 text-white rounded-r-full rounded-l-full font-extrabold text-xl`}
+      className={`${btnClass} ${className} capitalize px-6 py-2.5 text-white rounded-r-full rounded-l-full font-extrabold text-xl`}
       type={type || 'button'}
       disabled={!!isDisabled}
     >

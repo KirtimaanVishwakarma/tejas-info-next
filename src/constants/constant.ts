@@ -32,6 +32,18 @@ export const navbarOptions: Array<{ name: string, href: string }> = [
     { name: 'Contact Us', href: '/contact' },
 ]
 
+import { FaFacebook } from "react-icons/fa";
+import { IoLogoInstagram } from "react-icons/io5";
+import { FaLinkedin } from "react-icons/fa";
+import { FaYoutube } from "react-icons/fa";
+
+export const SocialMediaLinks: Array<{ icon: any, href?: string }> = [
+    { icon: FaFacebook, href: '' },
+    { icon: IoLogoInstagram, href: '' },
+    { icon: FaYoutube, href: '' },
+    { icon: FaLinkedin, href: '' },
+]
+
 export const footerOptions: Array<FooterOptionsInterface> = [
     {
         header: 'site map',

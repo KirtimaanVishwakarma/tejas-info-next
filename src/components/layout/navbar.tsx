@@ -7,7 +7,7 @@ import Link from 'next/link';
 
 const Navbar = () => {
   return (
-    <section className='bg-gray-w1 py-3'>
+    <section className='bg-gray-w1 bg-opacity-50 py-3 absolute top-0 w-full z-20'>
       <nav className='max-w-8xl m-auto  flex justify-between px-3'>
         <Image src={Images.Logo} alt='logo' className='w-36' />
         <div className='flex items-center justify-center'>
