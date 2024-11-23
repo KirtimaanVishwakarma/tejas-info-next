@@ -21,7 +21,7 @@ const AboutUs = () => {
   return (
     <div className='max-w-8xl m-auto'>
       <section className='flex items-center gap-4'>
-        <div className='flex-1 pl-4'>
+        <div className='flex-1 ml-4'>
           <header className='text-green-g1 uppercase font-bold text-sm'>
             about us
           </header>
@@ -44,7 +44,7 @@ const AboutUs = () => {
         </div>
       </section>
       <section className='flex items-center gap-4'>
-        <div className='flex-1'>
+        <div className='flex-1 ml-4'>
           <Image src={Images.GuyWithPc} alt='' className='w-full' />
         </div>
 

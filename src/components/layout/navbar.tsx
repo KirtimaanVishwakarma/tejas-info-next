@@ -4,8 +4,10 @@ import Images from '@/constants/images';
 import Button from '../Buttons/button';
 import { navbarOptions } from '@/constants/constant';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 
 const Navbar = () => {
+  const { pathname } = useRouter();
   return (
     <section className='bg-gray-w1 bg-opacity-50 py-3 absolute top-0 w-full z-20'>
       <nav className='max-w-8xl m-auto  flex justify-between px-3'>
@@ -15,7 +17,9 @@ const Navbar = () => {
             <Link
               key={nav.name}
               href={nav.href}
-              className='px-4 py-3 whitespace-nowrap font-semibold text-gray-g1 hover:text-green-g1 transition-all cursor-pointer delay-150 text-sm'
+              className={`px-4 py-3 whitespace-nowrap font-semibold ${
+                pathname === nav.href ? 'text-green-g1' : 'text-gray-g1'
+              } hover:text-green-g1 transition-all cursor-pointer delay-150 text-sm`}
             >
               {nav.name}
             </Link>

@@ -29,7 +29,7 @@ export const navbarOptions: Array<{ name: string, href: string }> = [
     { name: 'Services', href: '/services' },
     { name: 'Portfolio', href: '/portfolio' },
     { name: 'Blog', href: '/blog' },
-    { name: 'Contact Us', href: '/contact' },
+    { name: 'Contact Us', href: '/contact-us' },
 ]
 
 import { FaFacebook } from "react-icons/fa";
@@ -53,7 +53,7 @@ export const footerOptions: Array<FooterOptionsInterface> = [
             { name: 'services', href: '/services' },
             { name: 'portfolio', href: '/portfolio' },
             { name: 'blog', href: '/blog' },
-            { name: 'contact us', href: '/contact' }
+            { name: 'contact us', href: '/contact-us' }
         ]
     },
     {
