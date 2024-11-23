@@ -15,7 +15,7 @@ const TestimonialSection = () => {
         strict control over The Accomplishment of Intended Estimation
       </header>
       <Carousel
-        autoplay={false}
+        autoplay={true}
         slidesToScroll={3}
         slidesToShow={3}
         dots={true}

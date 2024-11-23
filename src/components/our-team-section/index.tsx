@@ -21,7 +21,7 @@ const OurTeam = () => {
             <div className='text-center bg-gray-w1 p-4 text-gray-b1'>
               <header className='capitalize text-3xl font-bold'>{member.name}</header>
               <header className='font-bold text-base my-2'>{member.designation}</header>
-              <div className='w-fit m-auto flex gap-2 items-center'>
+              <div className='w-fit m-auto flex gap-2 items-center mb-2'>
                 {member.socialMedia.map((socialMedia, ind) => (
                   <Icon
                     icon={<socialMedia.icon/>}

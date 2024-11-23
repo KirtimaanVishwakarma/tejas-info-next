@@ -16,7 +16,9 @@ const FAQ = () => {
         estimates.
       </header>
       <div className='flex gap-4 mt-4'>
-        <Image src={Images.Faq} alt='faq' className='flex-1' />
+        <div className='flex-1'>
+        <Image src={Images.Faq} alt='faq' className='' />
+        </div>
         <div className='flex flex-1 items-center'>
           <div className='flex flex-col gap-4'>
             {faqContents?.map((faq, index) => (
