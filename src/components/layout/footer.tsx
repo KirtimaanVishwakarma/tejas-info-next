@@ -3,6 +3,7 @@ import Images from '@/constants/images';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
+import { MdKeyboardArrowRight } from 'react-icons/md';
 
 const Footer = () => {
   return (
@@ -36,7 +37,8 @@ const Footer = () => {
                 </header>
                 <ul className='text-gray-w1 flex flex-col gap-2'>
                   {options.links.map((link) => (
-                    <li key={link.name}>
+                    <li key={link.name} className='flex items-center gap-2'>
+                      <MdKeyboardArrowRight />
                       <Link
                         href={link.href}
                         className=' hover:text-green-g1 transition-all'

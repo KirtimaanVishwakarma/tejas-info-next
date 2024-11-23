@@ -145,6 +145,8 @@ import { CiSearch } from "react-icons/ci";
 import { FaBullhorn } from "react-icons/fa6";
 import { IoColorPalette } from "react-icons/io5";
 import { BsCloudArrowDownFill } from "react-icons/bs";
+import Images from './images';
+import { StaticImageData } from 'next/image';
 
 export const servicesData: Array<{ title: string, description: string, image: any, cta?: string }> = [
     {
@@ -176,5 +178,157 @@ export const servicesData: Array<{ title: string, description: string, image: an
         title: 'Mobile App Development',
         description: 'Our team can help you build engaging and user-friendly Android, iOS, and web applications. As a professional IT software development company...',
         image: BsCloudArrowDownFill
+    },
+]
+
+export const whyClientChooseUs: Array<{ header: string; details: string }> = [
+    {
+        header: 'Latest Technologies',
+        details: 'Latest technologies like AI, blockchain, and IoT are transforming industries by enhancing efficiency and enabling innovative solutions. Staying updated with these advancements is essential for businesses to maintain a competitive edge.'
+    },
+    {
+        header: 'Uniqe Solutions',
+        details: 'Unique solutions are tailored approaches designed to address specific challenges faced by businesses, leveraging innovative strategies and technologies. By focusing on customization and creativity, these solutions foster growth, enhance efficiency, and drive competitive advantage.',
+    },
+    {
+        header: 'Powerful Strategies',
+        details: 'Powerful strategies in software development, such as Agile methodology and DevOps integration, enhance collaboration and accelerate delivery. Emphasizing user-centric design and microservices architecture leads to scalable, high-quality solutions that meet user needs effectively.'
+    },
+]
+
+export const clients: Array<string> = [
+    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEE3QAcR7UEYeDh20wR_8wnp7eUumxWBN4Vw&s',
+    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEE3QAcR7UEYeDh20wR_8wnp7eUumxWBN4Vw&s',
+    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEE3QAcR7UEYeDh20wR_8wnp7eUumxWBN4Vw&s',
+    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEE3QAcR7UEYeDh20wR_8wnp7eUumxWBN4Vw&s',
+    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEE3QAcR7UEYeDh20wR_8wnp7eUumxWBN4Vw&s',
+    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEE3QAcR7UEYeDh20wR_8wnp7eUumxWBN4Vw&s',
+    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEE3QAcR7UEYeDh20wR_8wnp7eUumxWBN4Vw&s',
+    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEE3QAcR7UEYeDh20wR_8wnp7eUumxWBN4Vw&s',
+    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEE3QAcR7UEYeDh20wR_8wnp7eUumxWBN4Vw&s',
+    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEE3QAcR7UEYeDh20wR_8wnp7eUumxWBN4Vw&s',
+]
+
+export const testimonials: Array<{
+    name: string;
+    designation: string;
+    image: string;
+    rating: number;
+}> = [
+        {
+            name: 'adam smith',
+            designation: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, labore dolore laborum dolorum culpa
+        ducimus ipsam quo, veniam animi pariatur facilis tempora incidunt nostrum quisquam, cum quasi laudantium?
+        Voluptates, sequi? Possimus ipsa, excepturi praesentium dolore quae placeat voluptatem doloremque
+        deserunt?`,
+            image: 'https://a.storyblok.com/f/191576/1200x800/a3640fdc4c/profile_picture_maker_before.webp',
+            rating: 3,
+        },
+        {
+            name: 'adam smith',
+            designation: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, labore dolore laborum dolorum culpa
+        ducimus ipsam quo, veniam animi pariatur facilis tempora incidunt nostrum quisquam, cum quasi laudantium?
+        Voluptates, sequi? Possimus ipsa, excepturi praesentium dolore quae placeat voluptatem doloremque
+        deserunt?`,
+            image: 'https://a.storyblok.com/f/191576/1200x800/a3640fdc4c/profile_picture_maker_before.webp',
+            rating: 5,
+        },
+        {
+            name: 'adam smith',
+            designation: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, labore dolore laborum dolorum culpa
+        ducimus ipsam quo, veniam animi pariatur facilis tempora incidunt nostrum quisquam, cum quasi laudantium?
+        Voluptates, sequi? Possimus ipsa, excepturi praesentium dolore quae placeat voluptatem doloremque
+        deserunt?`,
+            image: 'https://a.storyblok.com/f/191576/1200x800/a3640fdc4c/profile_picture_maker_before.webp',
+            rating: 5,
+        },
+        {
+            name: 'adam smith',
+            designation: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, labore dolore laborum dolorum culpa
+        ducimus ipsam quo, veniam animi pariatur facilis tempora incidunt nostrum quisquam, cum quasi laudantium?
+        Voluptates, sequi? Possimus ipsa, excepturi praesentium dolore quae placeat voluptatem doloremque
+        deserunt?`,
+            image: 'https://a.storyblok.com/f/191576/1200x800/a3640fdc4c/profile_picture_maker_before.webp',
+            rating: 5,
+        },
+        {
+            name: 'adam smith',
+            designation: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, labore dolore laborum dolorum culpa
+        ducimus ipsam quo, veniam animi pariatur facilis tempora incidunt nostrum quisquam, cum quasi laudantium?
+        Voluptates, sequi? Possimus ipsa, excepturi praesentium dolore quae placeat voluptatem doloremque
+        deserunt?`,
+            image: 'https://a.storyblok.com/f/191576/1200x800/a3640fdc4c/profile_picture_maker_before.webp',
+            rating: 5,
+        },
+        {
+            name: 'adam smith',
+            designation: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, labore dolore laborum dolorum culpa
+        ducimus ipsam quo, veniam animi pariatur facilis tempora incidunt nostrum quisquam, cum quasi laudantium?
+        Voluptates, sequi? Possimus ipsa, excepturi praesentium dolore quae placeat voluptatem doloremque
+        deserunt?`,
+            image: 'https://a.storyblok.com/f/191576/1200x800/a3640fdc4c/profile_picture_maker_before.webp',
+            rating: 5,
+        },
+        {
+            name: 'adam smith',
+            designation: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, labore dolore laborum dolorum culpa
+        ducimus ipsam quo, veniam animi pariatur facilis tempora incidunt nostrum quisquam, cum quasi laudantium?
+        Voluptates, sequi? Possimus ipsa, excepturi praesentium dolore quae placeat voluptatem doloremque
+        deserunt?`,
+            image: 'https://a.storyblok.com/f/191576/1200x800/a3640fdc4c/profile_picture_maker_before.webp',
+            rating: 5,
+        },
+        {
+            name: 'adam smith',
+            designation: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, labore dolore laborum dolorum culpa
+        ducimus ipsam quo, veniam animi pariatur facilis tempora incidunt nostrum quisquam, cum quasi laudantium?
+        Voluptates, sequi? Possimus ipsa, excepturi praesentium dolore quae placeat voluptatem doloremque
+        deserunt?`,
+            image: 'https://a.storyblok.com/f/191576/1200x800/a3640fdc4c/profile_picture_maker_before.webp',
+            rating: 5,
+        },
+        {
+            name: 'adam smith',
+            designation: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, labore dolore laborum dolorum culpa
+        ducimus ipsam quo, veniam animi pariatur facilis tempora incidunt nostrum quisquam, cum quasi laudantium?
+        Voluptates, sequi? Possimus ipsa, excepturi praesentium dolore quae placeat voluptatem doloremque
+        deserunt?`,
+            image: 'https://a.storyblok.com/f/191576/1200x800/a3640fdc4c/profile_picture_maker_before.webp',
+            rating: 5,
+        },
+    ]
+
+export const ourTeamMember: Array<{ image: string | StaticImageData, name: string, designation: string, socialMedia: Array<{ icon: any, href?: string }> }> = [
+    {
+        image: Images.Team, name: 'satoshi nakamoto', designation: 'front-end developer', socialMedia: [
+            { icon: FaFacebook, href: '' },
+            { icon: IoLogoInstagram, href: '' },
+            { icon: FaYoutube, href: '' },
+            { icon: FaLinkedin, href: '' },
+        ]
+    },
+    {
+        image: Images.Team, name: 'satoshi nakamoto', designation: 'front-end developer', socialMedia: [
+            { icon: FaFacebook, href: '' },
+            { icon: IoLogoInstagram, href: '' },
+            { icon: FaYoutube, href: '' },
+            { icon: FaLinkedin, href: '' },
+        ]
+    },
+    {
+        image: Images.Team, name: 'satoshi nakamoto', designation: 'front-end developer', socialMedia: [
+            { icon: FaFacebook, href: '' },
+            { icon: IoLogoInstagram, href: '' },
+            { icon: FaYoutube, href: '' },
+            { icon: FaLinkedin, href: '' },
+        ]
+    },
+    {
+        image: Images.Team, name: 'satoshi nakamoto', designation: 'front-end developer', socialMedia: [
+            { icon: FaFacebook, href: '' },
+            { icon: IoLogoInstagram, href: '' },
+            { icon: FaYoutube, href: '' },
+            { icon: FaLinkedin, href: '' },
+        ]
     },
 ]
