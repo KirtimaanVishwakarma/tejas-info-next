@@ -4,11 +4,13 @@ import CountSection from '@/components/count-section';
 import FAQ from '@/components/FAQ';
 import Layout from '@/components/layout';
 import Map from '@/components/map';
+import Services from '@/components/services-section';
 import React from 'react';
 
 const Home = () => {
   return (
     <section className='m-auto'>
+      <Services/>
       <AboutUs />
       <CountSection />
       <FAQ />

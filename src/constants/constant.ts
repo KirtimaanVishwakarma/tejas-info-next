@@ -125,3 +125,44 @@ export const faqContents: Array<FaqContentsInterface> = [
         details: `The cost of our services at RisuTech Global varies based on project requirements, complexity, and technology involved. We offer tailored solutions to meet the unique needs of each client. For a detailed quote, please contact us at info@risutechglobal.com or call us at +91 8081954350. We look forward to discussing your project!`
     }
 ]
+
+
+import { IoLogoAndroid } from "react-icons/io";
+import { IoCodeSlashOutline } from "react-icons/io5";
+import { CiSearch } from "react-icons/ci";
+import { FaBullhorn } from "react-icons/fa6";
+import { IoColorPalette } from "react-icons/io5";
+import { BsCloudArrowDownFill } from "react-icons/bs";
+
+export const servicesData: Array<{ title: string, description: string, image: any, cta?: string }> = [
+    {
+        title: 'Web Developement',
+        description: 'We create innovative web solutions that are tailored to your specific business needs and goals. Our experienced developers are expert at cre...',
+        image: IoCodeSlashOutline
+    },
+    {
+        title: 'Mobile App Development',
+        description: 'Our team can help you build engaging and user-friendly Android, iOS, and web applications. As a professional IT software development company...',
+        image: IoLogoAndroid
+    },
+    {
+        title: 'Mobile App Development',
+        description: 'Our team can help you build engaging and user-friendly Android, iOS, and web applications. As a professional IT software development company...',
+        image: CiSearch
+    },
+    {
+        title: 'Mobile App Development',
+        description: 'Our team can help you build engaging and user-friendly Android, iOS, and web applications. As a professional IT software development company...',
+        image: FaBullhorn
+    },
+    {
+        title: 'Mobile App Development',
+        description: 'Our team can help you build engaging and user-friendly Android, iOS, and web applications. As a professional IT software development company...',
+        image: IoColorPalette
+    },
+    {
+        title: 'Mobile App Development',
+        description: 'Our team can help you build engaging and user-friendly Android, iOS, and web applications. As a professional IT software development company...',
+        image: BsCloudArrowDownFill
+    },
+]

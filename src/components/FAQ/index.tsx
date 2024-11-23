@@ -19,8 +19,8 @@ const FAQ = () => {
         <Image src={Images.Faq} alt='faq' className='flex-1' />
         <div className='flex flex-1 items-center'>
           <div className='flex flex-col gap-4'>
-            {faqContents?.map((faq) => (
-              <div className='collapse bg-gray-w1 rounded'>
+            {faqContents?.map((faq, index) => (
+              <div className='collapse bg-gray-w1 rounded' key={index}>
                 <input type='radio' name='my-accordion-1' />
                 <div className='collapse-title text-xl font-bold text-black'>
                   {faq.header}
