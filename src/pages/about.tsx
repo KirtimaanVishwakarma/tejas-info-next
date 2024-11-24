@@ -15,7 +15,7 @@ import React from 'react';
 
 const About = () => {
   return (
-    <section className='m-auto'>
+    <section className='m-auto mb-8'>
       <div className='w-full relative bg-gray-w2 pt-24'>
         <AboutUs />
         <FAQ />

@@ -81,7 +81,7 @@ export const registerForm: Array<FormObjects> = [
         label: 'Name',
         id: 'name',
         type: 'text',
-        span: 'col-span-1',
+        span: 'col-span-2 md:col-span-1',
         placeholder: 'Name',
         form: {
             required: 'Name is required'
@@ -91,7 +91,7 @@ export const registerForm: Array<FormObjects> = [
         label: 'Phone',
         id: 'Phone',
         type: 'number',
-        span: 'col-span-1',
+        span: 'col-span-2 md:col-span-1',
         placeholder: 'Phone number',
         form: {
             required: 'Phone number is required'

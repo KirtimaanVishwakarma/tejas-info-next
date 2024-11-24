@@ -15,7 +15,7 @@ import React from 'react';
 
 const Home = () => {
   return (
-    <section className='m-auto'>
+    <section className='m-auto mb-8'>
       <div className='w-full relative pt-24 bg-gray-w2'>
         <FAQ />
       </div>

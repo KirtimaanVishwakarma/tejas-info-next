@@ -15,7 +15,7 @@ import React from 'react';
 
 const Home = () => {
   return (
-    <section className='m-auto'>
+    <section className='m-auto mb-4'>
       <HeroSection />
       <div className='w-full relative z-20 bg-gray-w2 flex flex-col gap-8 md:gap-16'>
         <Services />
