@@ -8,6 +8,7 @@ import HeroSection from '@/components/hero-section';
 import Layout from '@/components/layout';
 import Map from '@/components/map';
 import OurTeam from '@/components/our-team-section';
+import PageContent from '@/components/page-content';
 import Services from '@/components/services-section';
 import TestimonialSection from '@/components/testmonial-section';
 import { clients } from '@/constants/constant';
@@ -17,6 +18,11 @@ const Home = () => {
   return (
     <section className='m-auto mb-8'>
       <div className='w-full relative pt-24 bg-gray-w2'>
+        <PageContent
+          title='contact us'
+          content={`Although, final stages of the internal network gives a complete experience of The Parameter of Speculative Environment`}
+          stepper={[{ header: 'home', href: '/' }, { header: 'contact' }]}
+        />
         <ContactForm />
         <Map />
         <FAQ />

@@ -29,7 +29,7 @@ const AboutUs = () => {
             The best IT solution since{' '}
             <span className='text-green-g1'>2016</span>
           </header>
-          <p className='text-gray-g1 font-medium mb-4 text-left'>
+          <p className='text-gray-g1 font-medium mb-4 text-left leading-8  tracking-wider'>
             Although, final stages of the internal network gives a complete
             experience of The Parameter of Speculative Environment , Lorem ipsum
             dolor sit amet consectetur adipisicing elit. Eligendi voluptas

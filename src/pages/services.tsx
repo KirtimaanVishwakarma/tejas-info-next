@@ -8,6 +8,7 @@ import HeroSection from '@/components/hero-section';
 import Layout from '@/components/layout';
 import Map from '@/components/map';
 import OurTeam from '@/components/our-team-section';
+import PageContent from '@/components/page-content';
 import Services from '@/components/services-section';
 import TestimonialSection from '@/components/testmonial-section';
 import { clients } from '@/constants/constant';
@@ -17,6 +18,11 @@ const Home = () => {
   return (
     <section className='m-auto mb-8'>
       <div className='w-full relative pt-24 bg-gray-w2'>
+        <PageContent
+          title='our services'
+          content={`We are providing a variety of services, including web development, app development, game development, custom software development, CRM solutions, digital marketing, and SEO. They focus on delivering innovative software solutions to help businesses improve their technological capabilities and online presence.`}
+          stepper={[{ header: 'home', href: '/' }, { header: 'services' }]}
+        />
         <Services />
         <FAQ />
       </div>
