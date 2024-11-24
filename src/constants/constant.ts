@@ -22,14 +22,19 @@ export interface FormObjects {
         required: string;
     };
 }
-
-export const navbarOptions: Array<{ name: string, href: string }> = [
-    { name: 'Home', href: '/' },
-    { name: 'About', href: '/about' },
-    { name: 'Services', href: '/services' },
-    { name: 'Portfolio', href: '/portfolio' },
-    { name: 'Blog', href: '/blog' },
-    { name: 'Contact Us', href: '/contact-us' },
+import { FaHome } from "react-icons/fa";
+import { RiShoppingBag4Fill } from "react-icons/ri";
+import { GoProjectSymlink } from "react-icons/go";
+import { FaBlogger } from "react-icons/fa";
+import { RiContactsBook3Fill } from "react-icons/ri";
+import { TbInfoSquareFilled } from "react-icons/tb";
+export const navbarOptions: Array<{ name: string, href: string, logo: any }> = [
+    { name: 'Home', href: '/', logo: FaHome },
+    { name: 'About', href: '/about', logo: TbInfoSquareFilled },
+    { name: 'Services', href: '/services', logo: RiShoppingBag4Fill },
+    { name: 'Portfolio', href: '/portfolio', logo: GoProjectSymlink },
+    { name: 'Blog', href: '/blog', logo: FaBlogger },
+    { name: 'Contact Us', href: '/contact-us', logo: RiContactsBook3Fill },
 ]
 
 import { FaFacebook } from "react-icons/fa";
