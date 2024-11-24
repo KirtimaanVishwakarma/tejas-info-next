@@ -7,6 +7,7 @@ interface CarouselInterface {
   slidesToScroll?: number;
   autoplay?: boolean;
   dots?: boolean;
+  mdSlidesToShow?: number;
 }
 const Carousel = ({
   content,
@@ -14,6 +15,7 @@ const Carousel = ({
   slidesToScroll = 1,
   autoplay = true,
   dots = false,
+  mdSlidesToShow = 3,
 }: CarouselInterface) => {
   var settings = {
     dots,
@@ -41,8 +43,8 @@ const Carousel = ({
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
+          slidesToShow: mdSlidesToShow,
+          slidesToScroll: mdSlidesToShow,
           infinite: true,
           dots: true,
         },

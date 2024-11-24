@@ -17,14 +17,14 @@ const Navbar = () => {
   };
   return (
     <section className='bg-gray-w1 bg-opacity-50 py-3 absolute top-0 w-full z-20'>
-      <nav className='max-w-8xl m-auto  flex justify-between px-3'>
+      <nav className='max-w-8xl m-auto flex justify-between px-3'>
         <Image
           src={Images.Logo}
           alt='logo'
           className='w-36 cursor-pointer'
           onClick={() => router.push('/')}
         />
-        <div className='hidden md:flex items-center justify-center'>
+        <div className='hidden lg:flex items-center justify-center'>
           {navbarOptions.map((nav) => (
             <Link
               key={nav.name}
@@ -40,15 +40,15 @@ const Navbar = () => {
         <Button
           btnName={`Let's Connect`}
           onClick={() => router.push('/contact-us')}
-          className='hidden md:block'
+          className='hidden lg:block'
         />
-        <div className='drawer-content flex items-center justify-end md:hidden'>
+        <div className='drawer-content flex items-center justify-end lg:hidden'>
           <label htmlFor='my-drawer' className='drawer-button'>
             <RxHamburgerMenu color='#5e5e5e' fontSize='1.5rem' />
           </label>
         </div>
       </nav>
-      <div className='drawer md:hidden '>
+      <div className='drawer lg:hidden '>
         <input id='my-drawer' type='checkbox' className='drawer-toggle' />
         <div className='drawer-side '>
           <label
@@ -57,7 +57,7 @@ const Navbar = () => {
             className='drawer-overlay'
           ></label>
 
-          <ul className='menu bg-gray-w2 text-base-content min-h-full w-80 p-4 flex flex-col justify-between'>
+          <ul className='menu bg-gray-w2 text-base-content min-h-full w-80 md:w-1/2 p-4 flex flex-col justify-between'>
             <div className='flex flex-col gap-12'>
               <Image
                 src={Images.Logo}
@@ -78,7 +78,7 @@ const Navbar = () => {
                       router?.pathname === Nav.href
                         ? 'text-green-g1'
                         : 'text-gray-g1'
-                    } hover:text-green-g1 transition-all cursor-pointer delay-150 flex items-center gap-4 text-sm`}
+                    } hover:text-green-g1 transition-all cursor-pointer delay-150 flex items-center gap-4 text-sm md:text-base`}
                   >
                     <Nav.logo fontSize='1.3rem' />
                     {Nav.name}

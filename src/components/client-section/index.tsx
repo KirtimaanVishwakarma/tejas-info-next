@@ -10,7 +10,7 @@ const ClientSection = () => {
       description={`As a matter of fact the unification of the coherent software provides a
     strict control over The Accomplishment of Intended Estimation`}
     >
-      <div className='grid grid-cols-1 md:grid-cols-3 gap-4 mt-4'>
+      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4'>
         {whyClientChooseUs.map((client, index) => (
           <div
             key={index}

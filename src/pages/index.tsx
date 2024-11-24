@@ -15,9 +15,9 @@ import React from 'react';
 
 const Home = () => {
   return (
-    <section className='m-auto mb-4'>
+    <section className='m-auto'>
       <HeroSection />
-      <div className='w-full relative z-20 bg-gray-w2 flex flex-col gap-8 md:gap-16'>
+      <div className='w-full relative z-20 bg-gray-w2 flex flex-col gap-8 md:gap-8 lg:gap-16'>
         <Services />
         <AboutUs />
         <CountSection />

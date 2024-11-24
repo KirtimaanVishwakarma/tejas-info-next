@@ -13,7 +13,7 @@ const FAQ = () => {
     control over achieving your project goals and ensuring accurate
     estimates.'
     >
-      <div className='flex flex-col md:flex-row gap-4 mt-4'>
+      <div className='flex flex-col lg:flex-row gap-4 mt-4'>
         <div className='flex-1'>
           <Image src={Images.Faq} alt='faq' className='' />
         </div>

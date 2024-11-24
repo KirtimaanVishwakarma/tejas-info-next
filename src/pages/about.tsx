@@ -33,8 +33,10 @@ const About = () => {
           understand their unique goals, ensuring tailored solutions.`}
           stepper={[{ header: 'home', href: '/' }, { header: 'about us' }]}
         />
+        <div className='flex flex-col gap-8'>
         <AboutUs />
         <FAQ />
+        </div>
       </div>
     </section>
   );

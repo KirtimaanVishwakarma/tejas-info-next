@@ -10,7 +10,7 @@ const Services = () => {
       header={`What We’re Offering?`}
       description={`We are providing a variety of services, including web development, app development, game development, custom software development, CRM solutions, digital marketing, and SEO. They focus on delivering innovative software solutions to help businesses improve their technological capabilities and online presence.`}
     >
-      <section className='grid grid-cols-1 md:grid-cols-3 gap-4'>
+      <section className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>
         {servicesData.map((service, index: number) => (
           <div
             key={index}

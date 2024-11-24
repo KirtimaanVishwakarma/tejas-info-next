@@ -20,8 +20,8 @@ const experiencedServices: Array<{
 const AboutUs = () => {
   return (
     <div className='max-w-8xl m-auto'>
-      <section className='flex flex-col md:flex-row items-center gap-4 mr-4 md:mr-0'>
-        <div className='md:flex-1 ml-4'>
+      <section className='flex flex-col lg:flex-row items-center gap-4 px-4 md:px-8 lg:pr-0'>
+        <div className='lg:flex-1 lg:ml-4'>
           <header className='text-green-g1 uppercase font-bold text-sm'>
             about us
           </header>
@@ -39,16 +39,16 @@ const AboutUs = () => {
           </p>
           <Button btnName={`Let's Connect`} />
         </div>
-        <div className='md:flex-1 pl-4 md:pl-0'>
+        <div className='md:flex-1 md:w-full'>
           <Image src={Images.GirlWithBoard} alt='' className='w-full' />
         </div>
       </section>
-      <section className='flex flex-col md:flex-row items-center gap-4 my-8 mr-4 md:mr-0 md:my-0'>
-        <div className='flex-1 ml-4'>
+      <section className='flex flex-col lg:flex-row items-center gap-4 my-8 pr-4 md:pr-0'>
+        <div className='flex-1 pl-4 md:px-8 w-full '>
           <Image src={Images.GuyWithPc} alt='' className='w-full' />
         </div>
 
-        <div className='flex-1 pl-4 md:pl-0'>
+        <div className='flex-1 px-4 md:px-8 lg:px-0'>
           <header className='text-5xl font-extrabold capitalize tracking-tighter mb-4 text-gray-g3'>
             We Deal With The Aspects Of Professional{' '}
             <span className='text-green-g1'>IT Services</span>
@@ -68,8 +68,8 @@ const AboutUs = () => {
           </div>
         </div>
       </section>
-      <section className='flex flex-col md:flex-row items-center gap-4  mr-4 md:mr-0'>
-        <div className='flex-1 pl-4'>
+      <section className='flex flex-col lg:flex-row items-center gap-4 pr-4 md:px-8 lg:pr-0'>
+        <div className='flex-1 px-4'>
           <header className='text-5xl font-extrabold capitalize tracking-tighter mb-4 text-balance text-gray-g3'>
             We Are Here To IT Solution With 8 Years Of{' '}
             <span className='text-green-g1'>Experience</span>
@@ -79,7 +79,7 @@ const AboutUs = () => {
             of industry experience. Our commitment is to deliver innovative and
             reliable technology solutions tailored to your needs.
           </p>
-          <div>
+          <div className=''>
             {experiencedServices.map((service) => (
               <div key={service.header}>
                 <div className='flex justify-between text-lg'>
@@ -99,7 +99,7 @@ const AboutUs = () => {
             ))}
           </div>
         </div>
-        <div className='flex-1 ml-4 md:ml-0'>
+        <div className='flex-1 ml-4 md:ml-0 w-full px-4'>
           <Image src={Images.GuyWithSetting} alt='' className='w-full' />
         </div>
       </section>

@@ -55,7 +55,7 @@ const Footer = () => {
       </footer>
       <section className='bg-gray-b1'>
         <div className='max-w-8xl m-auto py-4'>
-          <div className='flex flex-col md:flex-row text-center md:text-left'>
+          <div className='flex flex-col md:flex-row md:justify-center lg:justify-start lg:text-center'>
             <header className='text-gray-g2'>
               © 2024 All rights reserved :
             </header>

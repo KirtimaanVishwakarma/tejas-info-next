@@ -23,8 +23,10 @@ const Home = () => {
           content={`We are providing a variety of services, including web development, app development, game development, custom software development, CRM solutions, digital marketing, and SEO. They focus on delivering innovative software solutions to help businesses improve their technological capabilities and online presence.`}
           stepper={[{ header: 'home', href: '/' }, { header: 'services' }]}
         />
-        <Services />
-        <FAQ />
+        <div className='flex flex-col gap-8'>
+          <Services />
+          <FAQ />
+        </div>
       </div>
     </section>
   );

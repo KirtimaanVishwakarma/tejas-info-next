@@ -9,7 +9,7 @@ interface PageContentInterface {
 const PageContent = ({ title, content, stepper }: PageContentInterface) => {
   return (
     <section className='bg-gray-b1 text-gray-w1 py-6 mb-8'>
-      <div className='max-w-8xl m-auto px-4 flex flex-col gap-3'>
+      <div className='max-w-8xl m-auto px-4 md:px-8 lg:px-4 flex flex-col gap-3'>
         <div className='flex gap-2 items-center text-lg font-bold capitalize'>
           {stepper.map((step) => {
             if (step.href) {

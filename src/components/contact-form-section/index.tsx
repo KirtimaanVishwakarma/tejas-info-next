@@ -10,7 +10,7 @@ const ContactForm = () => {
       componentType='contact'
       header='contact us for Any Questions'
       description='As a matter of fact the unification of the coherent software provides a strict control over The Accomplishment of Intended Estimation'
-      className='flex-col md:flex-row'
+      className='flex-col lg:flex-row'
     >
       <div className='flex-1 flex flex-col gap-6'>
         <header className='text-2xl capitalize font-extrabold'>

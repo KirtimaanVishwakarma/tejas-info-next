@@ -18,6 +18,7 @@ const TestimonialSection = () => {
             slidesToScroll={3}
             slidesToShow={3}
             dots={true}
+            mdSlidesToShow={2}
             content={testimonials.map((testimonial, index) => (
               <div className='bg-gray-w1 px-4 py-6 rounded' key={index}>
                 <div className='flex items-center gap-4'>
