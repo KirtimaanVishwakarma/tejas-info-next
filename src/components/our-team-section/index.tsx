@@ -10,7 +10,7 @@ const OurTeam = () => {
       header='our team'
       description='As a matter of fact the unification of the coherent software provides a strict control over The Accomplishment of Intended Estimation'
     >
-      <div className='grid grid-cols-4 gap-4'>
+      <div className='grid grid-cols-1 md:grid-cols-4 gap-4'>
         {ourTeamMember.map((member, index) => (
           <div key={index} className='rounded overflow-hidden'>
             <Image src={member.image} alt='' />

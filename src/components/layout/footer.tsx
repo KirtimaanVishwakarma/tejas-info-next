@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <section className='flex flex-col divide-y-1 divide-gray-g1 relative z-20'>
       <footer className='bg-gray-b1'>
-        <div className='max-w-8xl m-auto flex py-8 gap-4 h-full'>
+        <div className='max-w-8xl m-auto md:flex py-8 gap-4 h-full'>
           <section className='h-auto basis-1/3 rounded bg-white p-4 flex flex-col justify-between mx-4'>
             <div className='flex flex-col'>
               <Image
@@ -29,10 +29,10 @@ const Footer = () => {
             </div>
           </section>
 
-          <section className='flex justify-between w-full'>
+          <section className='flex flex-col md:flex-row gap-4 md:gap-0 pl-4 md:pl-0 mt-4 md:mt-0 justify-between w-full'>
             {footerOptions?.map((options) => (
               <div key={options.header} className='flex-1 h-fit'>
-                <header className='text-gray-g2 text-lg font-semibold mb-4'>
+                <header className='text-gray-g2 text-lg font-semibold mb-4 capitalize'>
                   {options.header}
                 </header>
                 <ul className='text-gray-w1 flex flex-col gap-2'>
@@ -41,7 +41,7 @@ const Footer = () => {
                       <MdKeyboardArrowRight />
                       <Link
                         href={link.href}
-                        className=' hover:text-green-g1 transition-all'
+                        className=' hover:text-green-g1 transition-all capitalize'
                       >
                         {link.name}
                       </Link>
@@ -55,7 +55,7 @@ const Footer = () => {
       </footer>
       <section className='bg-gray-b1'>
         <div className='max-w-8xl m-auto py-4'>
-          <div className='flex'>
+          <div className='flex flex-col md:flex-row text-center md:text-left'>
             <header className='text-gray-g2'>
               © 2024 All rights reserved :
             </header>

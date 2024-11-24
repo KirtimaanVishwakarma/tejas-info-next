@@ -20,12 +20,12 @@ const experiencedServices: Array<{
 const AboutUs = () => {
   return (
     <div className='max-w-8xl m-auto'>
-      <section className='flex items-center gap-4'>
-        <div className='flex-1 ml-4'>
+      <section className='flex flex-col md:flex-row items-center gap-4 mr-4 md:mr-0'>
+        <div className='md:flex-1 ml-4'>
           <header className='text-green-g1 uppercase font-bold text-sm'>
             about us
           </header>
-          <header className='text-5xl font-extrabold capitalize tracking-tighter mb-4 whitespace-nowrap text-gray-g3'>
+          <header className='text-5xl font-extrabold capitalize tracking-tighter mb-4 md:whitespace-nowrap text-gray-g3'>
             The best IT solution since{' '}
             <span className='text-green-g1'>2016</span>
           </header>
@@ -39,16 +39,16 @@ const AboutUs = () => {
           </p>
           <Button btnName={`Let's Connect`} />
         </div>
-        <div className='flex-1'>
+        <div className='md:flex-1 pl-4 md:pl-0'>
           <Image src={Images.GirlWithBoard} alt='' className='w-full' />
         </div>
       </section>
-      <section className='flex items-center gap-4'>
+      <section className='flex flex-col md:flex-row items-center gap-4 my-8 mr-4 md:mr-0 md:my-0'>
         <div className='flex-1 ml-4'>
           <Image src={Images.GuyWithPc} alt='' className='w-full' />
         </div>
 
-        <div className='flex-1'>
+        <div className='flex-1 pl-4 md:pl-0'>
           <header className='text-5xl font-extrabold capitalize tracking-tighter mb-4 text-gray-g3'>
             We Deal With The Aspects Of Professional{' '}
             <span className='text-green-g1'>IT Services</span>
@@ -68,7 +68,7 @@ const AboutUs = () => {
           </div>
         </div>
       </section>
-      <section className='flex items-center gap-4'>
+      <section className='flex flex-col md:flex-row items-center gap-4  mr-4 md:mr-0'>
         <div className='flex-1 pl-4'>
           <header className='text-5xl font-extrabold capitalize tracking-tighter mb-4 text-balance text-gray-g3'>
             We Are Here To IT Solution With 8 Years Of{' '}
@@ -99,7 +99,7 @@ const AboutUs = () => {
             ))}
           </div>
         </div>
-        <div className='flex-1'>
+        <div className='flex-1 ml-4 md:ml-0'>
           <Image src={Images.GuyWithSetting} alt='' className='w-full' />
         </div>
       </section>

@@ -22,7 +22,7 @@ const DetailsContainer = ({
       <header className='text-5xl font-extrabold capitalize tracking-tighter mb-3 text-gray-g3'>
         {header}
       </header>
-      <header className='font-normal text-gray-g1 text-base tracking-wider w-3/5 leading-8'>
+      <header className='font-normal text-gray-g1 text-base tracking-wider w-full md:w-3/5 leading-8'>
         {description}
       </header>
       <div className={`flex gap-4 mt-4 ${className || ''}`}>{children}</div>

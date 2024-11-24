@@ -11,8 +11,8 @@ const countDetails: Array<{
 ];
 const CountSection = () => {
   return (
-    <section className='bg-gray-b1 mb-8'>
-      <div className='max-w-8xl m-auto flex justify-between text-center py-12'>
+    <section className='bg-gray-b1'>
+      <div className='max-w-8xl m-auto flex flex-col gap-4 md:flex-row md:gap-0 justify-between text-center py-12'>
         {countDetails.map((count) => (
           <div key={count.title} className='text-5xl flex-1'>
             <header className='text-green-g1 font-extrabold'>{count.count}</header>

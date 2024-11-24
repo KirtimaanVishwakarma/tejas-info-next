@@ -12,7 +12,7 @@ const Navbar = () => {
     <section className='bg-gray-w1 bg-opacity-50 py-3 absolute top-0 w-full z-20'>
       <nav className='max-w-8xl m-auto  flex justify-between px-3'>
         <Image src={Images.Logo} alt='logo' className='w-36' />
-        <div className='flex items-center justify-center'>
+        <div className='hidden md:flex items-center justify-center'>
           {navbarOptions.map((nav) => (
             <Link
               key={nav.name}
@@ -25,7 +25,11 @@ const Navbar = () => {
             </Link>
           ))}
         </div>
-        <Button btnName={`Let's Connect`} onClick={()=>router.push('/contact-us')} />
+        <Button
+          btnName={`Let's Connect`}
+          onClick={() => router.push('/contact-us')}
+          className='hidden md:block'
+        />
       </nav>
     </section>
   );
