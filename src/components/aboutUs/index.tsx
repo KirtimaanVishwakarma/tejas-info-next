@@ -63,9 +63,12 @@ const AboutUs = () => {
           </p>
           <div className='grid grid-cols-1 md:grid-cols-2 gap-2'>
             {services.map((Service) => (
-              <div key={Service.header} className='bg-gray-w1 p-4 w-full'>
-                <header className='text-center text-black rounded capitalize text-lg font-bold flex items-center gap-4'>
-                  <Service.icon color='#1da84f' fontSize='2rem' />
+              <div
+                key={Service.header}
+                className='bg-gray-w1 group text-green-g1 p-4 w-full flex items-center gap-4 rounded group hover:text-gray-w2 hover:bg-green-g1'
+              >
+                <Service.icon fontSize='2rem' />
+                <header className=' text-black  capitalize text-lg font-bold group-hover:text-gray-w2 group-hover:bg-green-g1'>
                   {Service.header}
                 </header>
               </div>

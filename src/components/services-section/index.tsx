@@ -14,18 +14,20 @@ const Services = () => {
         {servicesData.map((service, index: number) => (
           <div
             key={index}
-            className='bg-gray-w1 rounded p-6 w-full flex flex-col gap-4'
+            className='bg-gray-w1 text-green-g1 rounded p-6 w-full flex flex-col gap-4 hover:bg-green-g1 group'
           >
-            <service.image color="#1da84f" fontSize="3.75rem"/>
-            <header className='text-black font-bold text-2xl'>
+            <service.image fontSize='3.75rem' className='group-hover:text-gray-w1'/>
+            <header className='text-black font-bold text-2xl group-hover:text-gray-w1'>
               {service.title}
             </header>
-            <p className='text-gray-g1 font-medium'>{service.description}</p>
-            <div className='flex items-center gap-2'>
-              <header className='capitalize text-green-g1 font-bold !text-xl !cursor-pointer'>
+            <p className='text-gray-g1 font-medium group-hover:text-gray-w1'>
+              {service.description}
+            </p>
+            <div className='flex items-center gap-2 group-hover:text-gray-w1'>
+              <header className='capitalize text-green-g1 font-bold !text-xl !cursor-pointer group-hover:text-gray-w1'>
                 Learn more
               </header>
-              <HiArrowLongRight  color="#1da84f" fontSize="1.125rem"/>
+              <HiArrowLongRight fontSize='1.125rem' />
             </div>
           </div>
         ))}
