@@ -3,11 +3,15 @@ import Button from '../Buttons/button';
 import Image from 'next/image';
 import Images from '@/constants/images';
 
-const services: Array<{ header: string }> = [
-  { header: 'worldwide services' },
-  { header: 'Support 24/7' },
-  { header: 'east to reach' },
-  { header: 'first on field' },
+import { FaMapLocation } from 'react-icons/fa6';
+import { TfiHeadphoneAlt } from 'react-icons/tfi';
+import { GiConsoleController } from 'react-icons/gi';
+import { IoIosStar } from 'react-icons/io';
+const services: Array<{ header: string; icon: any }> = [
+  { header: 'worldwide services', icon: FaMapLocation },
+  { header: 'Support 24/7', icon: TfiHeadphoneAlt },
+  { header: 'east to reach', icon: GiConsoleController },
+  { header: 'first on field', icon: IoIosStar },
 ];
 const experiencedServices: Array<{
   header: string;
@@ -57,11 +61,12 @@ const AboutUs = () => {
             Although, final stages of the internal network gives a complete
             experience of The Parameter of Speculative Environment
           </p>
-          <div className='grid grid-cols-2 gap-2'>
-            {services.map((service) => (
-              <div key={service.header} className='bg-gray-w1 p-4'>
-                <header className='text-center text-black rounded capitalize text-lg font-bold'>
-                  {service.header}
+          <div className='grid grid-cols-1 md:grid-cols-2 gap-2'>
+            {services.map((Service) => (
+              <div key={Service.header} className='bg-gray-w1 p-4 w-full'>
+                <header className='text-center text-black rounded capitalize text-lg font-bold flex items-center gap-4'>
+                  <Service.icon color='#1da84f' fontSize='2rem' />
+                  {Service.header}
                 </header>
               </div>
             ))}
