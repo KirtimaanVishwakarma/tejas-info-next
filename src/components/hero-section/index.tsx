@@ -15,11 +15,11 @@ const HeroSection = () => {
               target='_blank'
               href={link.href}
               key={index}
-              className='bg-gray-w1 p-2 rounded group border border-gray-w1 cursor-pointer hover:border-custom-primary'
+              className='bg-gray-w1 p-2 transition-all rounded group cursor-pointer hover:bg-custom-primary'
             >
               <link.icon
                 fontSize='1.5rem'
-                className='text-gray-g1 group-hover:text-custom-primary'
+                className='text-gray-g1 group-hover:bg-custom-primary group-hover:text-gray-w1'
               />
             </a>
           ))}
