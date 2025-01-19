@@ -65,10 +65,10 @@ const AboutUs = () => {
             {services.map((Service) => (
               <div
                 key={Service.header}
-                className='bg-gray-w1 group text-custom-primary p-4 w-full flex items-center gap-4 rounded group hover:text-gray-w2 hover:bg-custom-primary'
+                className='bg-gray-w1 group hover-transition text-custom-primary p-4 w-full flex items-center gap-4 rounded group hover:text-gray-w2'
               >
                 <Service.icon fontSize='2rem' />
-                <header className=' text-black  capitalize text-lg font-bold group-hover:text-gray-w2 group-hover:bg-custom-primary'>
+                <header className=' text-black  capitalize text-lg font-bold group-hover:text-gray-w2 '>
                   {Service.header}
                 </header>
               </div>

@@ -14,7 +14,7 @@ const Services = () => {
         {servicesData.map((service, index: number) => (
           <div
             key={index}
-            className='bg-gray-w1 text-custom-primary rounded p-6 w-full flex flex-col gap-4 hover:bg-custom-primary group'
+            className='bg-gray-w1 hover-transition text-custom-primary rounded p-6 w-full flex flex-col gap-4 group'
           >
             <service.image fontSize='3.75rem' className='group-hover:text-gray-w1'/>
             <header className='text-black font-bold text-2xl group-hover:text-gray-w1'>
