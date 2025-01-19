@@ -16,7 +16,7 @@ const ClientSection = () => {
             key={index}
             className='p-4 rounded bg-gray-w1 aspect-square flex flex-col justify-center gap-2'
           >
-            <header className='text-5xl font-bold text-green-g1'>
+            <header className='text-5xl font-bold text-custom-primary'>
               0{index + 1}.
             </header>
             <header className='font-extrabold text-2xl text-gray-b1 mt-4'>

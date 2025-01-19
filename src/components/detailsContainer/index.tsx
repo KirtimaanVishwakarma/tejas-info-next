@@ -16,7 +16,7 @@ const DetailsContainer = ({
 }: Container) => {
   return (
     <section className='px-4 md:px-8 max-w-8xl m-auto w-full'>
-      <header className='text-green-g1 font-bold uppercase'>
+      <header className='text-custom-primary font-bold uppercase'>
         {componentType}
       </header>
       <header className='text-5xl font-extrabold capitalize tracking-tighter mb-3 text-gray-g3'>

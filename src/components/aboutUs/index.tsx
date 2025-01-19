@@ -26,12 +26,12 @@ const AboutUs = () => {
     <div className='max-w-8xl m-auto'>
       <section className='flex flex-col lg:flex-row items-center gap-4 px-4 md:px-8 lg:pr-0'>
         <div className='lg:flex-1 lg:ml-4'>
-          <header className='text-green-g1 uppercase font-bold text-sm'>
+          <header className='text-custom-primary uppercase font-bold text-sm'>
             about us
           </header>
           <header className='text-5xl font-extrabold capitalize tracking-tighter mb-4 md:whitespace-nowrap text-gray-g3'>
             The best IT solution since{' '}
-            <span className='text-green-g1'>2016</span>
+            <span className='text-custom-primary'>2016</span>
           </header>
           <p className='text-gray-g1 font-medium mb-4 text-left leading-8  tracking-wider'>
             Although, final stages of the internal network gives a complete
@@ -55,7 +55,7 @@ const AboutUs = () => {
         <div className='flex-1 px-4 md:px-8 lg:px-0'>
           <header className='text-5xl font-extrabold capitalize tracking-tighter mb-4 text-gray-g3'>
             We Deal With The Aspects Of Professional{' '}
-            <span className='text-green-g1'>IT Services</span>
+            <span className='text-custom-primary'>IT Services</span>
           </header>
           <p className='text-gray-g1 mb-4'>
             Although, final stages of the internal network gives a complete
@@ -65,10 +65,10 @@ const AboutUs = () => {
             {services.map((Service) => (
               <div
                 key={Service.header}
-                className='bg-gray-w1 group text-green-g1 p-4 w-full flex items-center gap-4 rounded group hover:text-gray-w2 hover:bg-green-g1'
+                className='bg-gray-w1 group text-custom-primary p-4 w-full flex items-center gap-4 rounded group hover:text-gray-w2 hover:bg-custom-primary'
               >
                 <Service.icon fontSize='2rem' />
-                <header className=' text-black  capitalize text-lg font-bold group-hover:text-gray-w2 group-hover:bg-green-g1'>
+                <header className=' text-black  capitalize text-lg font-bold group-hover:text-gray-w2 group-hover:bg-custom-primary'>
                   {Service.header}
                 </header>
               </div>
@@ -80,7 +80,7 @@ const AboutUs = () => {
         <div className='flex-1 px-4'>
           <header className='text-5xl font-extrabold capitalize tracking-tighter mb-4 text-balance text-gray-g3'>
             We Are Here To IT Solution With 8 Years Of{' '}
-            <span className='text-green-g1'>Experience</span>
+            <span className='text-custom-primary'>Experience</span>
           </header>
           <p className='text-gray-g1 font-medium mb-4 text-left'>
             We Are Here To IT Solutions offers expert services backed by 8 years
@@ -99,7 +99,7 @@ const AboutUs = () => {
                   </header>
                 </div>
                 <progress
-                  className='progress w-full progress-success'
+                  className='progress w-full progress-error'
                   value={service.value}
                   max='100'
                 ></progress>

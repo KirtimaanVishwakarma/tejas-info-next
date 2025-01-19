@@ -30,8 +30,8 @@ const Navbar = () => {
               key={nav.name}
               href={nav.href}
               className={`px-4 py-3 whitespace-nowrap font-semibold ${
-                router?.pathname === nav.href ? 'text-green-g1' : 'text-gray-g1'
-              } hover:text-green-g1 transition-all cursor-pointer delay-150 text-sm`}
+                router?.pathname === nav.href ? 'text-custom-primary' : 'text-gray-g1'
+              } hover:text-custom-primary transition-all cursor-pointer delay-150 text-sm`}
             >
               {nav.name}
             </Link>
@@ -76,9 +76,9 @@ const Navbar = () => {
                     key={Nav.name}
                     className={`px-4 py-2 font-semibold ${
                       router?.pathname === Nav.href
-                        ? 'text-green-g1'
+                        ? 'text-custom-primary'
                         : 'text-gray-g1'
-                    } hover:text-green-g1 transition-all cursor-pointer delay-150 flex items-center gap-4 text-sm md:text-base`}
+                    } hover:text-custom-primary transition-all cursor-pointer delay-150 flex items-center gap-4 text-sm md:text-base`}
                   >
                     <Nav.logo fontSize='1.3rem' />
                     {Nav.name}

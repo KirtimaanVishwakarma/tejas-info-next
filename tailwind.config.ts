@@ -30,6 +30,10 @@ export default {
           w2: "#F8F6F4",
           b1: "#202020"
         },
+        custom: {
+          primary: '#E11433',
+          secondary: '#e0576c',
+        }
       },
 
     },

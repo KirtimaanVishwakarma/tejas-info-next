@@ -14,7 +14,7 @@ const Services = () => {
         {servicesData.map((service, index: number) => (
           <div
             key={index}
-            className='bg-gray-w1 text-green-g1 rounded p-6 w-full flex flex-col gap-4 hover:bg-green-g1 group'
+            className='bg-gray-w1 text-custom-primary rounded p-6 w-full flex flex-col gap-4 hover:bg-custom-primary group'
           >
             <service.image fontSize='3.75rem' className='group-hover:text-gray-w1'/>
             <header className='text-black font-bold text-2xl group-hover:text-gray-w1'>
@@ -24,7 +24,7 @@ const Services = () => {
               {service.description}
             </p>
             <div className='flex items-center gap-2 group-hover:text-gray-w1'>
-              <header className='capitalize text-green-g1 font-bold !text-xl !cursor-pointer group-hover:text-gray-w1'>
+              <header className='capitalize text-custom-primary font-bold !text-xl !cursor-pointer group-hover:text-gray-w1'>
                 Learn more
               </header>
               <HiArrowLongRight fontSize='1.125rem' />

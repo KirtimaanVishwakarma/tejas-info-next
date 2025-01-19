@@ -1,12 +1,8 @@
 import React from 'react';
 import FormWrapper from '../formWrapper';
-import { registerForm } from '@/constants/constant';
+import { contactDetails, registerForm } from '@/constants/constant';
 import Button from '../Buttons/button';
 import DetailsContainer from '../detailsContainer';
-import { BsFillEnvelopeFill } from 'react-icons/bs';
-import { FaMobileRetro } from 'react-icons/fa6';
-import { FaMapLocation } from 'react-icons/fa6';
-import { AiFillInstagram } from 'react-icons/ai';
 
 const ContactForm = () => {
   return (
@@ -17,33 +13,27 @@ const ContactForm = () => {
       className='flex-col lg:flex-row'
     >
       <div className='flex-1 flex flex-col gap-6'>
-        <header className='text-2xl capitalize font-extrabold'>
+        <header className='text-2xl capitalize font-extrabold text-gray-g3'>
           contact info :
         </header>
-        <div className='flex items-center gap-4'>
-          <BsFillEnvelopeFill color='#1da84f' fontSize={'2rem'} />
-          <header className='font-extrabold text-lg md:text-xl text-gray-g1'>
-            info@risutechglobal.com
-          </header>
-        </div>
-        <div className='flex items-center gap-4'>
-          <FaMobileRetro color='#1da84f' fontSize={'2rem'} />
-          <header className='font-extrabold text-lg md:text-xl text-gray-g1'>
-            +91 9654691007 , +91 8081954350
-          </header>
-        </div>
-        <div className='flex items-center gap-4'>
-          <FaMapLocation color='#1da84f' fontSize={'2rem'} />
-          <header className='font-extrabold text-lg md:text-xl text-gray-g1'>
-            M-28, Mehak Eco City, Noida, India 203207
-          </header>
-        </div>
-        <div className='flex items-center gap-4'>
-          <AiFillInstagram color='#1da84f' fontSize={'2rem'} />
-          <header className='font-extrabold text-lg md:text-xl text-gray-g1'>
-            risutechglobal
-          </header>
-        </div>
+        {contactDetails?.map((contact, ind) => (
+          <div className='flex items-center gap-4' key={ind}>
+            <contact.icon className='text-custom-primary' fontSize={'2rem'} />
+            <div className='font-extrabold text-lg md:text-xl text-gray-g1 flex gap-6'>
+              {contact?.details.map((detail) => (
+                <a
+                  key={detail.link}
+                  href={detail.link}
+                  target='_blank'
+                  className='font-extrabold text-lg md:text-xl text-gray-g1'
+                  rel='noopener noreferrer'
+                >
+                  {detail?.header}
+                </a>
+              ))}
+            </div>
+          </div>
+        ))}
       </div>
       <div className='flex-1'>
         <div className='grid grid-cols-2 w-full gap-x-4 gap-y-2 mb-4'>

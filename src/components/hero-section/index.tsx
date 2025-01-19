@@ -11,14 +11,22 @@ const HeroSection = () => {
       <div className='max-w-8xl m-auto flex justify-center items-center mx-2 md:mx-0 flex-col gap-2 md:gap-4 relative z-10'>
         <div className='flex gap-4 justify-center'>
           {SocialMediaLinks.map((link, index) => (
-            <div key={index} className='bg-gray-w1 p-2 rounded'>
-              <link.icon color="#5e5e5e" fontSize="1.5rem"/>
-            </div>
+            <a
+              target='_blank'
+              href={link.href}
+              key={index}
+              className='bg-gray-w1 p-2 rounded group border border-gray-w1 cursor-pointer hover:border-custom-primary'
+            >
+              <link.icon
+                fontSize='1.5rem'
+                className='text-gray-g1 group-hover:text-custom-primary'
+              />
+            </a>
           ))}
         </div>
         <header className='text-4xl md:text-5xl text-center tracking-tighter text-gray-b1 font-bold'>
           Empowering Your Vision with Innovative{' '}
-          <span className='text-green-g1'>Software</span> Solutions.
+          <span className='text-custom-primary'>Software</span> Solutions.
         </header>
         <p className='text-gray-g1 md:w-4/5 text-center leading-7 md:leading-8 text-base'>
           We specialize in delivering innovative software solutions tailored to

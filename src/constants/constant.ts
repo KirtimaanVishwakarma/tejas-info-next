@@ -43,10 +43,10 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
 
 export const SocialMediaLinks: Array<{ icon: any, href?: string }> = [
-    { icon: FaFacebook, href: '' },
-    { icon: IoLogoInstagram, href: '' },
-    { icon: FaYoutube, href: '' },
-    { icon: FaLinkedin, href: '' },
+    { icon: FaFacebook, href: 'https://www.instagram.com/kirtimaanvishwakarma' },
+    { icon: IoLogoInstagram, href: 'https://www.instagram.com/kirtimaanvishwakarma' },
+    { icon: FaYoutube, href: 'https://www.instagram.com/kirtimaanvishwakarma' },
+    { icon: FaLinkedin, href: 'https://www.instagram.com/kirtimaanvishwakarma' },
 ]
 
 export const footerOptions: Array<FooterOptionsInterface> = [
@@ -335,5 +335,32 @@ export const ourTeamMember: Array<{ image: string | StaticImageData, name: strin
             { icon: FaYoutube, href: '' },
             { icon: FaLinkedin, href: '' },
         ]
+    },
+];
+
+import { BsFillEnvelopeFill } from 'react-icons/bs';
+import { FaMobileRetro } from 'react-icons/fa6';
+import { FaMapLocation } from 'react-icons/fa6';
+import { AiFillInstagram } from 'react-icons/ai';
+interface ContactDetails {
+    icon: any;
+    details: Array<{ header: string, link: string }>;
+}
+export const contactDetails: Array<ContactDetails> = [
+    {
+        icon: BsFillEnvelopeFill,
+        details: [{ header: 'contact@tejasinfosystem.com', link: 'mailto:example@example.com?subject=Hello&body=This%20is%20a%20test%20email.' }]
+    },
+    {
+        icon: FaMobileRetro,
+        details: [{ header: '+91 9580107870', link: 'tel:+919580107870' }, { header: '+91 7985036925', link: 'tel:+7985036925' },]
+    },
+    {
+        icon: FaMapLocation,
+        details: [{ header: 'HNo 25H, Kharaiya Pokhara, East Basharatpur, Gorakhpur, Uttar Pradesh (273004)', link: 'https://www.google.com/maps?q=1600+Amphitheatre+Parkway,+Mountain+View,+CA' }]
+    },
+    {
+        icon: AiFillInstagram,
+        details: [{ header: 'tejasinfosystem', link: 'https://www.instagram.com/kirtimaanvishwakarma' }]
     },
 ]

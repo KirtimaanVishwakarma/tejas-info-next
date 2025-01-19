@@ -1,4 +1,4 @@
-import Logo from "../../public/logo.png"
+import Logo from "../../public/tejasLogo.svg"
 import GirlWithBoard from "../../public/1.png"
 import GuyWithPc from "../../public/2.png"
 import GuyWithSetting from "../../public/config.png"

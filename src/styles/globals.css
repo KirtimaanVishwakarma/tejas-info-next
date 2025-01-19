@@ -26,7 +26,7 @@ body {
 }
 
 .slick-dots li.slick-active div {
-  background-color: #869791; /* Change to your desired active color */
+  background-color: #E11433; /* Change to your desired active color */
   width: 12px; /* Slightly larger for emphasis */
   height: 12px;
 }

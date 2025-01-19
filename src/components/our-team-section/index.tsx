@@ -18,12 +18,12 @@ const OurTeam = () => {
               <header className='capitalize text-3xl font-bold'>
                 {member.name}
               </header>
-              <header className='font-bold text-base my-2'>
+              <header className='font-bold text-base my-2 text-gray-g1'>
                 {member.designation}
               </header>
-              <div className='w-fit m-auto flex gap-2 items-center mb-2'>
+              <div className='w-fit m-auto flex gap-6 items-center mb-2'>
                 {member.socialMedia.map((socialMedia, ind) => (
-                  <socialMedia.icon color='#5e5e5e' fontSize='1.5rem' key={ind}/>
+                  <socialMedia.icon className="text-gray-g1 hover:text-custom-primary cursor-pointer" fontSize='1.5rem' key={ind}/>
                 ))}
               </div>
             </div>

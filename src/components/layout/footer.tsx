@@ -1,4 +1,4 @@
-import { footerOptions } from '@/constants/constant';
+import { footerOptions, SocialMediaLinks } from '@/constants/constant';
 import Images from '@/constants/images';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -24,8 +24,23 @@ const Footer = () => {
             </div>
             <div>
               <header className='font-extrabold text-lg text-gray-g2'>
-                Follow us
+                Follow us:
               </header>
+              <div className='flex gap-6 mt-3'>
+                {SocialMediaLinks.map((link, index) => (
+                  <a
+                    href={link.href}
+                    key={index}
+                    target='_blank'
+                    className='bg-gray-w1 p-1 rounded group border border-gray-w1 cursor-pointer hover:border-custom-primary'
+                  >
+                    <link.icon
+                      fontSize='1.5rem'
+                      className='text-gray-g1 group-hover:text-custom-primary'
+                    />
+                  </a>
+                ))}
+              </div>
             </div>
           </section>
 
@@ -41,7 +56,7 @@ const Footer = () => {
                       <MdKeyboardArrowRight />
                       <Link
                         href={link.href}
-                        className=' hover:text-green-g1 transition-all capitalize'
+                        className=' hover:text-custom-primary transition-all capitalize'
                       >
                         {link.name}
                       </Link>
@@ -59,7 +74,7 @@ const Footer = () => {
             <header className='text-gray-g2'>
               © 2024 All rights reserved :
             </header>
-            <header className='text-gray-w2'>RisuTech Global</header>
+            <header className='text-custom-primary'>Tejas Infosystem</header>
           </div>
         </div>
       </section>
