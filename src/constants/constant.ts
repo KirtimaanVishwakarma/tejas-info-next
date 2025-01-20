@@ -127,11 +127,11 @@ export const registerForm: Array<FormObjects> = [
 export const faqContents: Array<FaqContentsInterface> = [
     {
         header: 'Do you offer both on-site and remote IT support?',
-        details: `RisuTech Global specializes in software development and digital marketing, also we provides facility of on-site or remote IT support. However, we prioritize understanding our clients' needs and can discuss tailored solutions that may include support options. Please reach out for more information!`
+        details: `Tejas InfoSystem specializes in software development and digital marketing, also we provides facility of on-site or remote IT support. However, we prioritize understanding our clients' needs and can discuss tailored solutions that may include support options. Please reach out for more information!`
     },
     {
-        header: 'What is RisuTech Global ?',
-        details: `RisuTech Global is a leading software development company that delivers innovative technology solutions, specializing in web development, application development, game development, and custom software. We also provide comprehensive digital marketing services, including SEO strategies to enhance online visibility. Our expert team focuses on creating user-friendly, high-performance applications and websites while prioritizing customer satisfaction and collaboration with clients.`
+        header: 'What is Tejas InfoSystem ?',
+        details: `Tejas InfoSystem is a leading software development company that delivers innovative technology solutions, specializing in web development, application development, game development, and custom software. We also provide comprehensive digital marketing services, including SEO strategies to enhance online visibility. Our expert team focuses on creating user-friendly, high-performance applications and websites while prioritizing customer satisfaction and collaboration with clients.`
     },
     {
         header: 'Is There Any Updates In The Future ?',
@@ -139,7 +139,7 @@ export const faqContents: Array<FaqContentsInterface> = [
     },
     {
         header: 'How Much For The Service?',
-        details: `The cost of our services at RisuTech Global varies based on project requirements, complexity, and technology involved. We offer tailored solutions to meet the unique needs of each client. For a detailed quote, please contact us at info@risutechglobal.com or call us at +91 8081954350. We look forward to discussing your project!`
+        details: `The cost of our services at Tejas InfoSystem varies based on project requirements, complexity, and technology involved. We offer tailored solutions to meet the unique needs of each client. For a detailed quote, please contact us at info@tejasinfosystem.com or call us at +91 8081954350. We look forward to discussing your project!`
     }
 ]
 
@@ -349,15 +349,15 @@ interface ContactDetails {
 export const contactDetails: Array<ContactDetails> = [
     {
         icon: BsFillEnvelopeFill,
-        details: [{ header: 'contact@tejasinfosystem.com', link: 'mailto:example@example.com?subject=Hello&body=This%20is%20a%20test%20email.' }]
+        details: [{ header: 'info@tejasinfosystem.com', link: 'mailto:example@example.com?subject=Hello&body=This%20is%20a%20test%20email.' }]
     },
     {
         icon: FaMobileRetro,
-        details: [{ header: '+91 9580107870', link: 'tel:+919580107870' }, { header: '+91 7985036925', link: 'tel:+7985036925' },]
+        details: [{ header: '+91 7007468349', link: 'tel:+917007468349' }, { header: '+91 7985036925', link: 'tel:+7985036925' },]
     },
     {
         icon: FaMapLocation,
-        details: [{ header: 'HNo 25H, Kharaiya Pokhara, East Basharatpur, Gorakhpur, Uttar Pradesh (273004)', link: 'https://www.google.com/maps?q=1600+Amphitheatre+Parkway,+Mountain+View,+CA' }]
+        details: [{ header: '25H, East Basharatpur, Gorakhpur, Uttar Pradesh (273004)', link: 'https://www.google.com/maps?q=1600+Amphitheatre+Parkway,+Mountain+View,+CA' }]
     },
     {
         icon: AiFillInstagram,
