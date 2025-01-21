@@ -35,7 +35,7 @@ const TestimonialSection = () => {
                       rating={testimonial.rating}
                       starDimension='20px'
                       starSpacing='1px'
-                      starRatedColor='#DAA520'
+                      starRatedColor='#E11433'
                       numberOfStars={5}
                     />
                   </div>

@@ -51,7 +51,6 @@ const AboutUs = () => {
         <div className='flex-1 pl-4 md:px-8 w-full '>
           <Image src={Images.GuyWithPc} alt='' className='w-full' />
         </div>
-
         <div className='flex-1 px-4 md:px-8 lg:px-0'>
           <header className='text-5xl font-extrabold capitalize tracking-tighter mb-4 text-gray-g3'>
             We Deal With The Aspects Of Professional{' '}

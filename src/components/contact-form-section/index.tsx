@@ -19,7 +19,7 @@ const ContactForm = () => {
         {contactDetails?.map((contact, ind) => (
           <div className='flex items-center gap-4' key={ind}>
             <contact.icon className='text-custom-primary' fontSize={'2rem'} />
-            <div className='font-extrabold text-lg md:text-xl text-gray-g1 flex gap-6'>
+            <div className='flex flex-col md:flex-row gap-0 font-extrabold text-lg md:text-xl text-gray-g1 md:gap-6'>
               {contact?.details.map((detail) => (
                 <a
                   key={detail.link}
