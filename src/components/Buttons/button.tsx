@@ -17,12 +17,12 @@ const Button: FC<ButtonInterface> = ({
 }: ButtonInterface) => {
   const btnClass = useMemo(() => {
     return btnType === 'primary'
-      ? ` bg-custom-primary text-white hover:bg-custom-secondary`
-      : 'border border-custom-primary text-custom-primary  hover:text-custom-secondary  hover:border-custom-secondary';
-  }, []);
+      ? `border bg-custom-primary text-white hover:text-custom-primary hover:border-custom-primary after:bg-gray-w2`
+      : 'border border-custom-primary text-custom-primary  hover:text-white after:bg-custom-primary after:text-white';
+  }, [className, btnType]);
   return (
     <button
-      className={`${btnClass} ${className} capitalize px-6 py-2.5 rounded-r-full rounded-l-full font-extrabold text-xl`}
+      className={`${btnClass} ${className} hover-button relative z-10  overflow-hidden capitalize px-6 py-2.5 rounded-r-full rounded-l-full font-extrabold text-xl`}
       type={type || 'button'}
       disabled={!!isDisabled}
       onClick={onClick}
